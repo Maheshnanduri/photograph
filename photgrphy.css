@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position:relative;
+    background: linear-gradient(to top,rgba(41, 39, 39, 0.7),rgba(44, 43, 43, 0.7)),url(photographer\ back.jpg);
+    width: 100vw;
+    height: 100vmax;
+    background-position: center;
+    background-size: cover;
+}
+.icon{
+   position: absolute;
+   top: 10px;
+   left: 14px;
+}
+.logo{
+    font-family:Segoe UI;
+    color: rgb(241, 245, 9); 
+    font-size: 40px;
+}
+.nav{
+    width: 100vw;
+}
+.nav ul{
+    height: 40px;
+    list-style: none;
+    margin-left: 240px;
+    margin-right: 15px;
+    float: left;
+}
+.nav ul li{
+    display: flex;
+    float: left;
+    margin-top: 34px;
+    margin-left: 50px;
+}
+.nav ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color:rgb(244, 247, 242);
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.nav ul li a:hover {
+    color: rgb(243, 228, 17);
+}
+.search{
+    float: right;
+    margin-top: 33px;
+    margin-right: 50px;
+}
+.search input {
+    float: left;
+    height: 22px;
+    width: 190px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgb(243, 228, 17);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 4px;
+    font-size: 16px;
+}
+.search input:focus{
+    outline: none;
+}
+.search button{
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 80px;
+    height: 32px;
+    border: none;
+    background-color: #f7f301;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.search button:hover{
+    background-color: #fff;
+}
+.content {
+    color: #fff;
+    clear: both;
+    width: 60vw;
+    padding-top: 160px;
+    padding-left: 50px;
+    float: left;
+   /* border: 1px solid #fff; */
+}
+.content h1{
+    font-family: Arial;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+.content h1 span{
+    color: #f7f301;
+    font: 52px;
+}
+.content p{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+}
+.btn{
+    width: 120px;
+    height: 38px;
+    font-size: 16px;
+    background-color: #f7f301;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color:#fff;
+    color: #f77801;
+}
+.cn_btn{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.form{
+    color: #fff;
+    background: linear-gradient(to top,rgb(0,0,0,0.3),rgb(0,0,0,0.3));
+    width: 300px;
+    height: 400px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #272727;
+}
+.form h2{
+    font-family: Arial;
+    height: 44px;
+    line-height: 44px;
+    background-color: #e68932;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form input{
+    width: 100%;
+    height: 40px;
+    margin-top: 14px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #f7f301;
+    font-size: 16px;
+}
+.li_btn{
+width: 100%;
+margin-top: 24px;
+margin-bottom: 16px;
+}
+.link{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+}
+.link a{
+    text-decoration: none;
+    color: #f77801;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+.link a:hover{
+    color: #f7f301;
+}
+.liw{
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.icons span {
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.icons span:first-child{
+    margin-left: 0;
+}
+.icons span:hover{
+    color: #f7f301;
+}
+/* Responsive CSS*/
+
+@media screen and (max-width:1200px) {
+    .logo{
+        font-size: 3.6vw;
+    }
+    .nav ul li a{
+        font-size: 1.6vw;
+    }
+    .content h1{
+        font-size: 5.5vw;
+    }
+    .content h1 span{
+        font-size: 6.6vw;
+    }
+    .content p{
+        font-size: 2.3vw;
+    }
+    .cn_btn{
+        width: 16vw;
+        height: 5.4vh;
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width:1139){
+    .nav ul {
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width:974) {
+    .main{
+        height: 150vh;
+    }
+    .logo{
+        font-size: 4.2vw;
+    }
+    .nav ul{
+        width: auto;
+        float: none;
+    }
+    .nav li a{
+        font-size: 1.6vw;
+    }
+    .search{
+        clear: both;
+        float: left;
+        margin-left: 230px;
+        padding-top: 14px;
+    }
+    .content{
+        width: 90vw;
+        padding-top: 100px;
+        padding-left: 5vw;
+        margin-bottom: 70px;
+    }
+    .content h1 span{
+        font-size: 8.1vw;
+    }
+    .content p{
+        font-size: 2.5vw;
+  }
+  .cn_btn{
+    font-size: 2.1vw;
+    width: 18vw;
+  }
+  .form{
+    clear: both;
+    float: none;
+    margin: auto;
+  }
+}
+@media screen and (max-width:865px){
+    .icon{
+        position:initial;
+        text-align: center;
+    }
+    .logo{
+        font-size: 7.2vw;
+        padding-top: 20px;
+    }
+    .nav ul{
+        margin: 0;
+    }
+    .nav ul li a {
+        font-size: 2.1vw;
+    }
+    .search{
+        margin-left: 4vw;
+    }
+}
+@media screen and (max-widt:650px) {
+    .main{
+        background-position: 35px;
+    }
+    .logo{
+        font-size: 8.5vw;
+    }
+    .nav ul li a{
+        font-size: 2.7vw;
+    }
+    .search input{
+        width: 160px;
+    }
+    .content{
+        padding-top: 10vw;
+    }
+}
+
+
+
+    
